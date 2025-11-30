@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat to Success</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Boat to Success</h1>
+        <nav>
+            <a href="#notice">Notice</a> |
+            <a href="#media">Media</a> |
+            <a href="#test">Test</a> |
+            <a href="#chat">Chat</a>
+        </nav>
+    </header>
+
+    <section id="notice">
+        <h2>Notice Board</h2>
+        <div id="notices">
+            <p>No notices yet.</p>
+        </div>
+    </section>
+
+    <section id="media">
+        <h2>Media Upload</h2>
+        <input type="file" id="mediaUpload" multiple>
+        <div id="mediaFiles"></div>
+    </section>
+
+    <section id="test">
+        <h2>Test Section</h2>
+        <button onclick="startTest()">Start Test</button>
+        <div id="testArea"></div>
+    </section>
+
+    <section id="chat">
+        <h2>Chat Section</h2>
+        <div id="chatBox" style="border:1px solid #ccc; padding:10px; height:200px; overflow-y:scroll;"></div>
+        <input type="text" id="chatInput" placeholder="Type message">
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
